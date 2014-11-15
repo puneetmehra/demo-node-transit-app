@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+var debug = require('debug')('my_transit');
+var app = require('../app');
+var sys = require('sys');
+
+app.set('port', process.env.PORT || 3000);
+
+var server = app.listen(app.get('port'), function() {
+  sys.puts('Transit App server listening on port ' + server.address().port);
+});
