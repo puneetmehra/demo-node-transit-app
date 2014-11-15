@@ -21,3 +21,11 @@ as I'm a js n00b and am probably making various mistakes.
 Over time if I have cycles/interest I may clean up bits and pieces, but hopefully someone else can find some of this
 useful for their own web app.
 
+========
+Usage (be sure you have mongo up and running):
+
+npm install   <— Will setup all the required modules in node_modules
+bin/www   <— Starts the server
+
+At this point you should be able to connect to localhost:3000 to get the app and assuming mongo's setup, you should
+be able to add/display various AC transit routes. 
